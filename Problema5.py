@@ -6,7 +6,7 @@ class Alumno:
         self.notas=[]
 
     def display(self):
-        print(f'Nombre: {self.nombre}, número de registro: {self.numeroregisto}')
+        print(f'Nombre: {self.nombre}, N°registro: {self.numeroregisto}')
         if self.edad is not None:
             print(f'Edad: {self.edad}')
         if self.notas:
@@ -20,11 +20,14 @@ class Alumno:
         notas = input('Ingrese notas: ')
         self.notas=notas
 
-nombre = input('Ingrese nombre del alumno: ').capitalize()
-numeroregistro = input('Ingrese número de registro: ')
-alumno = Alumno(nombre, numeroregistro)
+alum1=Alumno('Rosa', 3242)
+alum1.display()
+alum1.set_age()
+alum1.set_nota()
+alum1.display()
 
-alumno.display()
-alumno.set_age()
-alumno.set_nota()
-alumno.display()
+alum2=Alumno('Juan', 4920)
+alum1.display()
+alum1.set_age()
+alum1.set_nota()
+alum1.display()
