@@ -1,9 +1,7 @@
-import numerosaleatorios
+import numeros_ran
 
-numeros_al = generador_numeros.generar_numeros()
+numeros_alea = numeros_ran.numerosaleatorios()
 
-# Mostrar la lista generada por pantalla
-generador_numeros.mostrar_lista(numeros_aleatorios)
+numeros_ran.mostrar(numeros_alea)
 
-# Ordenar y mostrar la lista por pantalla
-generador_numeros.ordenar_lista(numeros_aleatorios)
+numeros_ran.ordenar(numeros_alea)

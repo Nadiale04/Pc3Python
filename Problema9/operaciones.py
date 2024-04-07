@@ -8,7 +8,7 @@ def suma(a,b):
 
 def resta(a,b):
     try:
-        resultado=a -b
+        resultado=a-b
         return resultado       
     except TypeError:
         print("Error: Tipo de dato no válido.")
