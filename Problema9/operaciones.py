@@ -1,33 +1,36 @@
-
-def suma(a,b):
+def suma(n1,n2):
     try:
-        resultado=a+b
+        resultado=n1+n2
         return resultado      
     except TypeError:
         print("Error: Tipo de dato no válido.")
+        pass
 
-def resta(a,b):
+def resta(n1,n2):
     try:
-        resultado=a-b
+        resultado=n1-n2
         return resultado       
     except TypeError:
         print("Error: Tipo de dato no válido.")
+        pass
 
-def producto(a,b):
+def producto(n1,n2):
     try:
-        resultado=a*b
+        resultado=n1*n2
         return resultado
     except TypeError:
         print("Error: Tipo de dato no válido.")
+        pass
 
-def division(a,b):
+def division(n1,n2):
     try:
-        if b==0:
+        if n2==0:
             raise ZeroDivisionError
-        resultado=a/b
+        resultado=n1/n2
         return resultado
            
     except ZeroDivisionError:
         print("Error: No es posible dividir entre cero.")
     except TypeError:
         print("Error: Tipo de dato no válido.")
+        pass
